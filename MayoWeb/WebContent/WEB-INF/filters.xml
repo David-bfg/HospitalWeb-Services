@@ -1,0 +1,162 @@
+<Filters>
+<ClinicNumber>
+<span>
+<span class="spaces"></span>
+	<select  name="dummy_name">
+		<option value="like">has</option>
+		<option value="not_like">does not have</option>
+	</select>
+		<span class="spaces"></span>
+Keyword: <input type="text" name="dummy_name" /><span class="spaces"></span>
+</span>
+</ClinicNumber>
+
+<Diagnosis>
+<span>
+<span class="spaces"></span>
+	<select name="dummy_name">
+		<option value="like">has</option>
+		<option value="not_like">does not have</option>
+	</select>
+	<span class="spaces"></span>
+Keyword: <input type="text" name="dummy_name" />
+	<span class="spaces"></span>
+	</span>
+</Diagnosis>
+
+<Procedure>
+<span>
+<span class="spaces"></span>
+	<select  name="dummy_name">
+		<option value="like">has</option>
+		<option value="not_like">does not have</option>
+	</select>
+		<span class="spaces"></span>
+Keyword: <input type="text" name="dummy_name" />	<span class="spaces"></span>
+</span>
+</Procedure>
+
+<Condition>
+<span>
+<span class="spaces"></span>
+Keyword: 
+<input type="text"  name="dummy_name" />
+<span class="spaces"></span>
+</span>
+
+</Condition>
+
+<DOB>
+<span class="spaces"></span>
+<span>
+	From: <input type="text" name="dummy_name_to" />
+		<span class="spaces"></span>
+	To: <input type="text" name="dummy_name_from" />
+		<span class="spaces"></span>
+		</span>
+</DOB>
+
+<Gender>
+<span class="spaces"></span>
+<span>
+	<input type="radio" value="M"  name="dummy_name" style="width:20px" /> Male	<span class="spaces"></span>
+	<input type="radio" value="F"  name="dummy_name" style="width:20px" />Female <span class="spaces"></span>
+</span>
+</Gender>
+
+<Extremity>
+<span class="spaces"></span>
+<span>
+	<input type="radio" value="L"  name="dummy_name" style="width:20px" /> Lower <span class="spaces"></span>
+	<input type="radio" value="R"  name="dummy_name" style="width:20px" /> Upper <span class="spaces"></span>
+</span>
+</Extremity>
+
+<Side>
+<span class="spaces"></span>
+<span>
+	<input type="radio" value="L"  name="dummy_name" style="width:20px" /> Left	<span class="spaces"></span>
+	<input type="radio" value="R"  name="dummy_name" style="width:20px" /> Right <span class="spaces"></span>
+	<input type="radio" value="B"  name="dummy_name" style="width:20px" /> Bilateral <span class="spaces"></span>
+</span>
+</Side>
+
+<Involved>
+<span class="spaces"></span>
+<span>
+	<input type="radio" value="I"  name="dummy_name" style="width:20px" /> Involved	<span class="spaces"></span>
+	<input type="radio" value="U"  name="dummy_name" style="width:20px" /> Un-involved <span class="spaces"></span>
+</span>
+</Involved>
+
+<Dominant>
+<span class="spaces"></span>
+<span>
+	<input type="radio" value="D"  name="dummy_name" style="width:20px" /> Dominant	<span class="spaces"></span>
+	<input type="radio" value="N"  name="dummy_name" style="width:20px" /> Non-Dominant <span class="spaces"></span>
+</span>
+</Dominant>
+
+<Provider>
+<span>
+<span class="spaces"></span>
+Keyword: 
+<input type="text"  name="dummy_name" />
+<span class="spaces"></span>
+</span>
+</Provider>
+
+<Therapist>
+<span class="spaces"></span>
+<span>
+	<input type="radio" value="one"  name="dummy_name" style="width:20px" /> Has seen on one Visit	<span class="spaces"></span>
+	<input type="radio" value="more"  name="dummy_name" style="width:20px" /> Has seen on more than one <span class="spaces"></span>
+</span>
+</Therapist>
+
+<Kinesiologist>
+<span class="spaces"></span>
+<span>
+	<input type="radio" value="one"  name="dummy_name" style="width:20px" /> Has seen on one Visit	<span class="spaces"></span>
+	<input type="radio" value="more"  name="dummy_name" style="width:20px" /> Has seen on more than one <span class="spaces"></span>
+</span>
+</Kinesiologist>
+
+<SystemUsed>
+<span>
+<span class="spaces"></span>
+Keyword: 
+<input type="text"  name="dummy_name" />
+<span class="spaces"></span>
+</span>
+</SystemUsed>
+
+<StudyName>
+<span>
+<span class="spaces"></span>
+Keyword: 
+<input type="text"  name="dummy_name" />
+<span class="spaces"></span>
+</span>
+</StudyName>
+
+
+<ResearchStudy>
+<span>
+<span class="spaces"></span>
+Keyword: 
+<input type="text"  name="dummy_name" />
+<span class="spaces"></span>
+</span>
+</ResearchStudy>
+
+<AssistiveDevice>
+<span>
+<span class="spaces"></span>
+Keyword: 
+<input type="text"  name="dummy_name" />
+<span class="spaces"></span>
+</span>
+</AssistiveDevice>
+
+</Filters>

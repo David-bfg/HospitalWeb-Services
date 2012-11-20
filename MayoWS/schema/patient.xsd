@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="Patient">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="clinicNum" type="xs:integer" />
+				<xs:element name="lastname" type="xs:string" />
+				<xs:element name="firstname" type="xs:string" />
+				<xs:element name="dob" type="xs:date" />
+
+				<xs:element name="gender">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="M" />
+							<xs:enumeration value="F" />
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+
+				<xs:element name="height" type="xs:decimal" />
+				<xs:element name="weight" type="xs:decimal" />
+
+				<xs:element name="side">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="L" />
+							<xs:enumeration value="R" />
+							<xs:enumeration value="B" />
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+
+				<xs:element name="extremity">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="L" />
+							<xs:enumeration value="U" />
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+
+				<xs:element name="involved">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="I" />
+							<xs:enumeration value="U" />
+							<xs:enumeration value="B" />
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+
+				<xs:element name="dominant">
+					<xs:simpleType>
+						<xs:restriction base="xs:string">
+							<xs:enumeration value="D" />
+							<xs:enumeration value="N" />
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:element>
+				<xs:element name="measuredSide" type="xs:string" />
+				<xs:element name="problemDescriptor" type="xs:string" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

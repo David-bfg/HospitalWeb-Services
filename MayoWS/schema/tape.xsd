@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Tape">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="tapeID" type="xs:integer"  minOccurs="0" />
+				<xs:element name="visitID" type="xs:integer" />
+				<xs:element name="clinicNum" type="xs:string" />
+				<xs:element name="tapeNum" type="xs:integer" />
+				<xs:element name="studyID" type="xs:integer" />
+				<xs:element name="backup" type="xs:string" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

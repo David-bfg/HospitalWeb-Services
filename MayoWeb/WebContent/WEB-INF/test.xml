@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<list>
+	<Patient>
+		<clinicNum>100001</clinicNum>
+		<lastname>Shrestha</lastname>
+		<firstname>Danish</firstname>
+		<dob>10-09-1987</dob>
+		<gender>M</gender>
+		<height>5.11</height>
+		<weight>140</weight>
+		<side>L</side>
+		<extremity>LE</extremity>
+	</Patient>
+	
+	<Patient>
+		<clinicNum>100002</clinicNum>
+		<lastname>Garvey</lastname>
+		<firstname>David</firstname>
+		<dob>10-09-1987</dob>
+		<gender>M</gender>
+		<height>5.11</height>
+		<weight>140</weight>
+		<side>L</side>
+		<extremity>LE</extremity>
+	</Patient>
+	
+	<Patient>
+		<clinicNum>100003</clinicNum>
+		<lastname>Ashbridge</lastname>
+		<firstname>Laura</firstname>
+		<dob>10-09-1987</dob>
+		<gender>F</gender>
+		<height>4.3</height>
+		<weight>134</weight>
+		<side>L</side>
+		<extremity>LE</extremity>
+	</Patient>
+	
+	<Patient>
+		<clinicNum>100004</clinicNum>
+		<lastname>ocean</lastname>
+		<firstname>island</firstname>
+		<dob>10-09-1987</dob>
+		<gender>M</gender>
+		<height>5.61</height>
+		<weight>240</weight>
+		<side>L</side>
+		<extremity>LE</extremity>
+	</Patient>
+</list>

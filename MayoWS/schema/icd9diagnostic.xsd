@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Icd9Diagnostic">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="clinicNum" type="xs:string" />
+				<xs:element name="icd9Diagnostic" type="xs:string" />
+				<xs:element name="icd9DiagnosticID" type="xs:integer"  minOccurs="0" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

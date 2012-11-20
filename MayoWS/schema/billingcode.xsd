@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="BillingCodes">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="billingCodeID" type="xs:string"  minOccurs="0" />
+				<xs:element name="visitCharge" type="xs:decimal" />
+				<xs:element name="cptCode" type="xs:integer" />
+				<xs:element name="integerIncrement" type="xs:integer" />
+				<xs:element name="visitID" type="xs:integer" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

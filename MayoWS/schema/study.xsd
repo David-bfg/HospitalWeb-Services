@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Study">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="visitID" type="xs:integer" minOccurs="0" />
+				<xs:element name="oldStudyName" type="xs:string" minOccurs="0" />
+				<xs:element name="studyName" type="xs:string" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

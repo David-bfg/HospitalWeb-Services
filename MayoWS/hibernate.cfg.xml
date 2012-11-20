@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+<!-- Database connection settings -->
+<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+<property name="connection.url">jdbc:mysql://localhost:3306/mayo</property>
+<property name="connection.username">root</property>
+<property name="connection.password"></property>
+<!-- JDBC connection pool (use the built-in) -->
+<property name="connection.pool_size">1</property>
+<!-- SQL dialect -->
+<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+<!-- Enable Hibernate's automatic session context management -->
+<property name="current_session_context_class">thread</property>
+<!-- Disable the second-level cache -->
+<property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+<!-- Echo all executed SQL to stdout -->
+<property name="show_sql">true</property>
+<!-- Drop and re-create the database schema on startup -->
+<property name="hbm2ddl.auto">none</property>
+
+<mapping class="com.mayo.db.Patient"/>
+<mapping class="com.mayo.db.Visit"/>
+<mapping class="com.mayo.db.AssistiveDevice"/>
+<mapping class="com.mayo.db.Icd9Diagnostic"/>
+<mapping class="com.mayo.db.Tape"/>
+<mapping class="com.mayo.db.File"/>
+<mapping class="com.mayo.db.Condition"/>
+<mapping class="com.mayo.db.Icd9ProcedureCode"/>
+<mapping class="com.mayo.db.SystemUsed"/>
+<mapping class="com.mayo.db.Study"/>
+<mapping class="com.mayo.db.BillingCodes"/>
+<mapping class="com.mayo.db.ResearchStudy"/>
+<mapping class="com.mayo.db.PatientAssistiveDevice"/>
+<mapping class="com.mayo.db.PatientCondition"/>
+<mapping class="com.mayo.db.PatientStudy"/>
+<mapping class="com.mayo.db.VisitResearchStudy"/>
+<mapping class="com.mayo.db.VisitSystemUsed"/>
+</session-factory>
+</hibernate-configuration>

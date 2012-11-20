@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<links>
+	<link>
+	        <name>Patient</name>
+	        <url>Patient.jsp</url>
+	</link>
+	<link>
+	        <name>Visit</name>
+	        <url>javascript:initVisit()</url>
+	</link>
+	<link>
+	        <name>Test</name>
+	        <url>#</url>
+	</link>
+</links>

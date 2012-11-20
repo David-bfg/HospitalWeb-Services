@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN"
+    "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>
+  <allow>
+    <create creator="new" javascript="JDate">
+      <param name="class" value="java.util.Date"/>
+    </create>
+    <create creator="new" javascript="Patient">
+      <param name="class" value="com.mayo.dwr.Patient"/>
+    </create>
+    <create creator="new" javascript="Visit">
+      <param name="class" value="com.mayo.dwr.Visit"/>
+    </create>
+    <create creator="new" javascript="AssistiveDevice">
+      <param name="class" value="com.mayo.dwr.AssistiveDevice"/>
+    </create>
+    <create creator="new" javascript="BillingCode">
+      <param name="class" value="com.mayo.dwr.BillingCode"/>  
+    </create>
+    <create creator="new" javascript="Condition">
+      <param name="class" value="com.mayo.dwr.Condition"/>
+    </create>
+    <create creator="new" javascript="File">
+      <param name="class" value="com.mayo.dwr.File"/>  
+    </create>
+    <create creator="new" javascript="Icd9Diagnostic">
+      <param name="class" value="com.mayo.dwr.Icd9Diagnostic"/>
+    </create>
+    <create creator="new" javascript="Icd9ProcedureCode">
+      <param name="class" value="com.mayo.dwr.Icd9ProcedureCode"/>  
+    </create>
+    <create creator="new" javascript="ResearchStudy">
+      <param name="class" value="com.mayo.dwr.ResearchStudy"/>
+    </create>
+    <create creator="new" javascript="Study">
+      <param name="class" value="com.mayo.dwr.Study"/>  
+    </create>
+    <create creator="new" javascript="SystemUsed">
+      <param name="class" value="com.mayo.dwr.SystemUsed"/>
+    </create>
+    <create creator="new" javascript="Tape">
+      <param name="class" value="com.mayo.dwr.Tape"/>  
+    </create>
+     <create creator="new" javascript="Search">
+      <param name="class" value="com.mayo.dwr.Search"/>
+    </create>
+    <create creator="new" javascript="AutoComplete">
+      <param name="class" value="com.mayo.dwr.AutoComplete"/>
+    </create>
+  </allow>
+</dwr>

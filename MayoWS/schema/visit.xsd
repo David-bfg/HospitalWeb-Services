@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="Visit">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="visitID" type="xs:integer"  minOccurs="0" />
+				<xs:element name="date" type="xs:date" />
+				<xs:element name="visitNum" type="xs:integer"  minOccurs="0" />
+				<xs:element name="clinicNum" type="xs:string" />
+				<xs:element name="provider" type="xs:string" />
+				<xs:element name="kinesiologist" type="xs:string" />
+				<xs:element name="dateProcessingComplete" type="xs:date" />
+				<xs:element name="physicalTherapist" type="xs:string" />
+				<xs:element name="dateAnalysisComplete" type="xs:date" />
+
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

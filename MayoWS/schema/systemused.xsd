@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="SystemUsed">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="visitID" type="xs:integer"  minOccurs="0" />
+				<xs:element name="name" type="xs:string" />
+				<xs:element name="oldname" type="xs:string" minOccurs="0" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

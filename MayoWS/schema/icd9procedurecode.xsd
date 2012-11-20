@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Icd9ProcedureCode">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="clinicNum" type="xs:string" />
+				<xs:element name="icd9ProcedureCode" type="xs:string" />
+				<xs:element name="icd9ProcedureCodeID" type="xs:integer"  minOccurs="0" />
+				<xs:element name="procedureDescriptor" type="xs:string" />
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

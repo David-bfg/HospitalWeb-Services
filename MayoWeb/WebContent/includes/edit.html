@@ -1,0 +1,412 @@
+<div id="patient_edit" title="Edit" style="display:none">
+<form method="post">
+<table width="400px" id="form">
+	<tr>
+		<td width="150px">Clinic Number</td>
+		<td><input type="text" name="clinicnumber" disabled="" /></td>
+	</tr>
+
+	<tr>
+		<td>Lastname</td>
+		<td><input type="text" name="lastname" /></td>
+	</tr>
+	<tr>
+		<td>Firstname</td>
+		<td><input type="text" name="firstname" /></td>
+	</tr>
+
+	<tr>
+		<td>Date of Birth</td>
+		<td><input id="edit_dob" type="text" name="dob" /></td>
+	</tr>
+
+	<tr>
+		<td>Gender</td>
+		<td><input type="text" name="gender" /></td>
+	</tr>
+
+	<tr>
+		<td>Height</td>
+		<td><input type="text" name="height" /></td>
+	</tr>
+
+	<tr>
+		<td>Weight</td>
+		<td><input type="text" name="weight" /></td>
+	</tr>
+
+	<tr>
+		<td>Side</td>
+		<td><select name="side">
+			<option value="L">Left</option>
+			<option value="R">Right</option>
+			<option value="B">Bilateral</option>
+		</select></td>
+	</tr>
+
+	<tr>
+		<td>Extremity</td>
+		<td><select name="extremity">
+			<option value="L">Lower Extremity</option>
+			<option value="U">Upper Extremity</option>
+		</select></td>
+	</tr>
+		<tr>
+		<td>Involved</td>
+		<td><select name="involved">
+			<option value="I">Involved</option>
+			<option value="U">Not-Involved</option>
+			<option value="B">Both</option>
+		</select></td>
+	</tr>
+	<tr>
+		<td>Dominant</td>
+		<td><select name="dominant">
+			<option value="N">Not Dominant</option>
+			<option value="D">Dominant</option>
+		</select></td>
+	</tr>
+	
+	<tr>
+		<td>Measured Side</td>
+		<td><input type="text" name="measuredSide" /></td>
+	</tr>
+	<tr>
+		<td>Problem Descriptor</td>
+		<td><textarea name="problemDescriptor"></textarea></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submit" class="submit"
+			value="Submit" onclick="commitEdit()" /></td>
+	</tr>
+</table>
+</form>
+</div>
+
+
+<div id="visit_edit" title="Edit" style="display:none">
+<form method="post">
+<table width="400px" id="form">
+	<tr>
+		<td width="150px">visitID</td>
+		<td><input type="text" name="visitID" disabled=""  /></td>
+	</tr>
+
+	<tr>
+		<td>date</td>
+		<td><input id="edit_visit_date" type="text" name="lastname" /></td>
+	</tr>
+	<tr>
+		<td>visitNum</td>
+		<td><input type="text" name="firstname" disabled="" /></td>
+	</tr>
+
+	<tr>
+		<td>clinicNum</td>
+		<td><input  type="text" name="dob" disabled="" /></td>
+	</tr>
+
+	<tr>
+		<td>provider</td>
+		<td><input id="auto_edit_provider" type="text" name="gender" /></td>
+	</tr>
+
+	<tr>
+		<td>kinesiologist</td>
+		<td><input id="auto_edit_kinesiologist" type="text" name="height" /></td>
+	</tr>
+
+	<tr>
+		<td>dateProcessingComplete</td>
+		<td><input id="edit_visit_dateProcessingComplete" type="text" name="weight" /></td>
+	</tr>
+
+	<tr>
+		<td>physicalTherapist</td>
+		<td><input id="auto_edit_physicalTherapist" type="text" name="weight" /></td>
+	</tr>
+
+	<tr>
+		<td>DateAnalysisComplete</td>
+		<td><input id="edit_visit_dateAnalysisComplete" type="text" name="weight" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submit" class="submit" value="Submit" onclick="visitcommitEdit()" /></td>
+	</tr>
+</table>
+</form>
+</div>
+
+
+
+
+<div id="assistivedevice_edit" title="Add" style="display:none">
+<form method="post">
+<table width="400px" id="form">
+	<tr>
+		<td width="150px">Clinic Num</td>
+		<td><input type="text" name="clinicNum" disabled="" /></td>
+	</tr>
+	<tr>
+		<td>Assistive Device Name</td>
+		<td><input type="text" id="auto_edit_assistive_device_name" name="name" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submit" class="submit" value="Submit" onclick="assistiveDeviceCommitEdit()" /></td>
+	</tr>
+</table>
+</form>
+</div>
+
+<div id="condition_edit" title="Edit" style="display:none">
+<form method="post">
+<table width="400px" id="form">
+	<tr>
+		<td width="150px">Clinic Num</td>
+		<td><input type="text" name="clinicNum" disabled="" /></td>
+	</tr>
+	<tr>
+		<td>Condition Name</td>
+		<td><input type="text" id="auto_edit_condition_name" name="name" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submit" class="submit" value="Submit" onclick="conditionCommitEdit()" /></td>
+	</tr>
+</table>
+</form>
+</div>
+
+<div id="icd9diagnostic_edit" title="Edit" style="display:none">
+<form method="post">
+<table width="400px" id="form">
+	<tr>
+		<td>ICD9 Diagnostic ID</td>
+		<td><input type="text" name="icd9diagnosticid" disabled="" /></td>
+	</tr>
+	<tr>
+		<td>ICD9 Diagnostic</td>
+		<td><input type="text" id="auto_edit_icd9diagnostic" name="icd9diagnostic" /></td>
+	</tr>
+	<tr>
+		<td>Clinic Number</td>
+		<td><input type="text" name="clinicNum" disabled="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submit" class="submit" value="Submit" onclick="icd9DiagnosticCommitEdit()" /></td>
+	</tr>
+	
+</table>
+</form>
+</div>
+
+<div id="tape_edit" title="Add" style="display:none">
+<form method="post">
+<table width="400px" id="form">
+	<tr>
+		<td>Tape ID</td>
+		<td><input type="text" name="tapeID" disabled="" /></td>
+	</tr>
+	<tr>
+		<td>Clinic Number</td>
+		<td><input type="text" name="clinicNum" disabled="" /></td>
+	</tr>
+	<tr>
+		<td>Visit ID</td>
+		<td><input type="text" name="visitID" /></td>
+	</tr>
+	<tr>
+		<td>Tape Number</td>
+		<td><input type="text" name="tapeNum" /></td>
+	</tr>
+	<tr>
+		<td>Study ID</td>
+		<td><input type="text" name="studyID" /></td>
+	</tr>
+	<tr>
+		<td>Is Backup</td>
+		<td>
+			<select name="backup">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submit" class="submit" value="Submit" onclick="tapeCommitEdit()" /></td>
+	</tr>
+	
+</table>
+</form>
+</div>
+
+<div id="icd9procedurecode_edit" title="Edit" style="display:none">
+<form method="post">
+<table width="400px" id="form">
+	<tr>
+		<td>ICD9 Procedure Code ID</td>
+		<td><input type="text" name="id" disabled="" /></td>
+	</tr>
+	
+	<tr>
+		<td>Clinic Number</td>
+		<td><input type="text" name="clinicnumber" disabled="" /></td>
+	</tr>
+	<tr>
+		<td>ICD9 Procedure Code</td>
+		<td><input type="text" id="auto_edit_icd9procedurecode" name="icd9procedurecode" /></td>
+	</tr>
+	<tr>
+		<td>Procedure Descriptor</td>
+		<td><input type="text"  name="icd9procedureDescriptor" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submit" class="submit" value="Submit" onclick="icd9ProcedureCodeCommitEdit()" /></td>
+	</tr>
+</table>
+</form>
+</div>
+<div id="systemused_edit" title="Edit" style="display:none">
+<form method="post">
+<table width="400px" id="form">
+	<tr>
+		<td>System Name</td>
+		<td><input type="text" id="auto_edit_system_name" name="name" /></td>
+	</tr>
+	<tr>
+		<td>Visit ID</td>
+		<td><input type="text" name="visitID" disabled="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submit" class="submit" value="Submit" onclick="systemUsedCommitEdit()" /></td>
+	</tr>
+</table>
+</form>
+</div>
+
+<div id="study_edit" title="Edit" style="display:none">
+<form method="post">
+<table width="400px" id="form">
+	<tr>
+		<td>Study Name</td>
+		<td><input type="text" id="auto_edit_study_name" name="name" /></td>
+	</tr>
+	<tr>
+		<td>Visit ID</td>
+		<td><input type="text" name="name" disabled="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submit" class="submit" value="Submit" onclick="studyCommitEdit()" /></td>
+	</tr>
+</table>
+</form>
+</div>
+
+<div id="billingcodes_edit" title="Edit" style="display:none">
+<form method="post">
+<table width="400px" id="form">
+	<tr>
+		<td>Visit Charge</td>
+		<td><input type="text" name="visitcharge" /></td>
+	</tr>
+	<tr>
+		<td width="150px">Cpt Code</td>
+		<td><input type="text" name="cptcode" /></td>
+	</tr>
+	<tr>
+		<td>Integer Increment</td>
+		<td><input type="text" name="integerincrement" /></td>
+	</tr>
+	<tr>
+		<td>Visit ID</td>
+		<td><input type="text" name="visitID" disabled="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submit" class="submit" value="Submit" onclick="billingCodesCommitEdit()" /></td>
+	</tr>
+</table>
+</form>
+</div>
+
+<div id="researchstudy_edit" title="Edit" style="display:none">
+<form method="post">
+<table width="400px" id="form">
+	<tr>
+		<td>Research Study Name</td>
+		<td><input type="text"  id="auto_edit_research_study_name" name="name" /></td>
+	</tr>
+	<tr>
+		<td>Description</td>
+		<td><input type="text" name="description" /></td>
+	</tr>
+	<tr>
+		<td>Visit ID</td>
+		<td><input type="text" name="visitID" disabled="" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submit" class="submit" value="Submit" onclick="researchStudyCommitEdit()" /></td>
+	</tr>
+</table>
+</form>
+</div>
+
+
+<div id="file_edit" title="Add" style="display:none">
+<form method="post">
+<table width="400px" id="form">
+
+	<tr>
+		<td>File ID</td>
+		<td><input type="text" name="fileID" disabled="" /></td>
+	</tr>
+	
+	<tr>
+		<td>Clinic Number</td>
+		<td><input type="text" name="clinicNum" disabled="" /></td>
+	</tr>
+		<tr>
+		<td width="150px">File Name</td>
+		<td><input type="text" name="fileName" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" name="submit" class="submit" value="Submit" onclick="filecommitEdit()" /></td>
+	</tr>
+</table>
+</form>
+</div>
+
+
+<script type="text/javascript">
+	$(function() {
+		$("#edit_dob").datepicker( { dateFormat: 'yy-mm-dd' } );
+		$("#edit_dob").datepicker( "option", "changeYear", true );
+		$("#edit_dob").datepicker( "option", "yearRange", '1900:2015' );
+	});
+	$(function() {
+		$("#edit_visit_date").datepicker( { dateFormat: 'yy-mm-dd' } );
+		$("#edit_visit_date").datepicker( "option", "changeYear", true );
+		$("#edit_visit_date").datepicker( "option", "yearRange", '1900:2015' );
+		});
+		$(function() {
+			$("#edit_visit_dateProcessingComplete").datepicker( { dateFormat: 'yy-mm-dd' } );
+			$("#edit_visit_dateProcessingComplete").datepicker( "option", "changeYear", true );
+			$("#edit_visit_dateProcessingComplete").datepicker( "option", "yearRange", '1900:2015' );
+			});
+		$(function() {
+			$("#edit_visit_dateAnalysisComplete").datepicker( { dateFormat: 'yy-mm-dd' } );
+			$("#edit_visit_dateAnalysisComplete").datepicker( "option", "changeYear", true );
+			$("#edit_visit_dateAnalysisComplete").datepicker( "option", "yearRange", '1900:2015' );
+			});
+	
+	</script>

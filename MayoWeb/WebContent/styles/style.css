@@ -1,0 +1,208 @@
+body {
+margin:0px;
+padding:0px;
+background: url('../images/newback.jpg') repeat-x #0a2f66;
+	font: bold 11px/1.5em Verdana;
+}
+
+
+#container {
+width: 1024px;
+margin:auto;
+}
+
+#logo {
+padding-left:50px;
+height:55px;
+}
+
+
+#header { 
+	/*height:34px;
+	background-image: url("../images/header.jpg");*/
+	
+}
+
+
+#sub_header {
+	height:34px;
+	background-image: url("../images/header.jpg");
+}
+
+#body {
+background:white;
+
+	padding-bottom:0px;
+	margin-bottom:0px;
+}
+
+#left {
+	width:200px;
+	float: left;
+}
+
+#right {
+	padding-top:10px;
+	padding-right:5px;
+	padding-bottom:0px;
+	margin-bottom:0px;
+}
+
+#footer {
+	height:15px;
+	background: url("../images/footer.jpg") white;
+}
+
+
+h1 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	color: #0d3493;
+	margin:0;
+	padding:0;
+	margin-bottom:10px;
+	}
+	
+h2 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	color: #0d3493;
+	margin:0;
+	padding:0;
+	margin-bottom:10px;
+	}
+	
+h3 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:bold;
+	color: #0d3493;
+	margin:0;
+	padding:0;
+	margin-bottom:5px;
+	}
+
+table {
+color: #333333;
+font-size:13px;
+}
+
+#form {
+margin-top: 5px;
+}
+
+#add input,#edit input {
+width:200px;
+border: 1px solid #5571b3;
+font-size:13px;
+}
+
+#add input.submit, #edit input.submit{
+width:200px;
+height:45px;
+border: none;
+background:url('../images/sub_header.jpg');
+font-size:13px;
+}
+
+
+#add input.submit:hover, #edit input.submit:hover{
+
+border: 1px solid #6fa006;
+background:url('../images/sub_header.jpg');
+font-size:13px;
+}
+
+sudofooter {
+font-weight:normal;
+}
+
+.add {
+	
+	background:url('../images/add.jpg');
+	border:1px solid black;
+	
+	width:22px;
+	height:22px;
+}
+	
+#searchFilter .deleteMe {
+display:none;
+}
+
+.spaces {
+width:20px;
+padding:10px;
+margin:10px;
+}
+
+#gridheader, #gridheader li, #gridheader li a, #gridheader li a:hover,  #gridheader li a:visited,  #gridheader li a:active {
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size:13px;
+font-weight:bold;
+color:#0d3493;
+text-decoration: none;
+}
+
+#gridheader li a:hover{
+color:#363636;
+}
+
+
+
+div.trigger {
+	padding: 0 0 0 0px;
+	margin: 0 0 0px 0px;
+	margin-bottom:1px;
+	background: url('../images/center.jpg') repeat-x;
+	background-position:right top;
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	font-size: 1em;
+	font-weight: normal;
+	float: left;
+}
+div.trigger div {
+	margin:0px;
+	padding:0px;
+	width:100%;
+	background: url('../images/left.jpg') no-repeat;
+	background-position:left top;
+	}
+	
+div.trigger div div{
+	width:8px;
+	float:right;
+	background: url('../images/right.jpg') no-repeat;
+	background-position:right top; 
+	}
+
+div.trigger h1 {
+	padding-left:50px;
+	}
+	
+div.trigger a {
+	color: #dedede;
+	text-decoration: none;
+	display: block;
+}
+div.trigger a:hover { color: #ffffff; }
+div.trigger:hover,div.trigger:hover div, div.trigger.active, div.trigger.active div {background-position: left bottom;} /*--When toggle is triggered, it will shift the image to the bottom to show its "opened" state--*/
+
+.toggle_container {
+	margin: 0 0 5px;
+	padding: 0;
+	border-top: 1px solid #d6d6d6;
+	background: #f0f0f0 url('../images/toggle_block_stretch.gif') repeat-y left top;
+	overflow: hidden;
+	font-size: 1.2em;
+
+	clear: both;
+}
+.toggle_container .block {
+	padding: 20px; /*--Padding of Container--*/
+	background: url('../images/toggle_block_btm.gif') no-repeat left bottom; /*--Bottom rounded corners--*/
+}

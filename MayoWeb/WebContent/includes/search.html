@@ -1,0 +1,63 @@
+
+<div id="filters">
+
+<div id="searchFilter">
+<span class="deleteMe" style="margin-top:10px;padding-top:10px;" ><a OnClick="javascript:deleteFilter(this)"><img src="images/delete.jpg" border="0px" /></a></span>
+<span style="margin-top:10px;padding-top:10px;" >
+<a OnClick="javascript:addFilter()"><img src="images/add.jpg" border="0px" /></a></span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select onChange="getInnerSearch(this)">
+<option value="None">None</option>
+<option value="ClinicNumber">Clinic Number</option>
+<option value="Diagnosis">Diagnosis</option>
+<option value="Procedure">Procedure</option>
+<option value="AssistiveDevice">Assistive Device</option>
+<option value="Condition">Condition</option>
+<option value="DOB">DOB</option>
+<option value="Dominant">Dominant</option>
+<option value="Extremity">Extremity</option>
+<option value="Gender">Gender</option>
+<option value="Involved">Involved</option>
+<option value="Kinesiologist">Kinesiologist</option>
+<option value="Provider">Provider</option>
+<option value="ResearchStudy">Research Study</option>
+<option value="Side">Side</option>
+<option value="StudyName">Study Name</option>
+<option value="SystemUsed">System Used</option>
+<option value="Therapist">Therapist</option>
+</select>
+<span></span>
+<input type="button" value="Search" style="width:100px;background:url('images/sub_header.jpg');"
+ onclick="submitSearch()" />
+</div>
+
+</div>
+ 
+
+<div id="searchFilterRep" style="vertical-align:middle;display:none">
+<span class="deleteMe" style="margin-top:10px;padding-top:10px;" ><a OnClick="javascript:deleteFilter(this)"><img src="images/delete.jpg" border="0px" /></a></span>
+<span style="margin-top:10px;padding-top:10px;" >
+<a OnClick="javascript:addFilter()"><img src="images/add.jpg" border="0px" /></a></span>
+&nbsp;&nbsp;
+<select onChange="getInnerSearch(this)">
+<option value="None">None</option>
+<option value="ClinicNumber">Clinic Number</option>
+<option value="Diagnosis">Diagnosis</option>
+<option value="Procedure">Procedure</option>
+<option value="AssistiveDevice">Assistive Device</option>
+<option value="Condition">Condition</option>
+<option value="DOB">DOB</option>
+<option value="Dominant">Dominant</option>
+<option value="Extremity">Extremity</option>
+<option value="Gender">Gender</option>
+<option value="Involved">Involved</option>
+<option value="Kinesiologist">Kinesiologist</option>
+<option value="Provider">Provider</option>
+<option value="ResearchStudy">Research Study</option>
+<option value="Side">Side</option>
+<option value="StudyName">Study Name</option>
+<option value="SystemUsed">System Used</option>
+<option value="Therapist">Therapist</option>
+</select>
+<span></span>
+</div>
